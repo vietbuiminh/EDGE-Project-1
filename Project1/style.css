@@ -2,12 +2,14 @@
 	max-width:1400px;
 	width:100%;
 	margin: 0 auto;
-	font-family:Avenir, Kristopher Regular, Adobe Casion, sans-serif;
-	
+	font-family:sans-serif;
 }
 .website-header {
 	display:grid;
 	
+}
+
+h1 {
 }
 
 .website-footer{
