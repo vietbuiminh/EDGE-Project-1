@@ -1,0 +1,24 @@
+.container {
+	max-width:1400px;
+	width:100%;
+	margin: 0 auto;
+	font-family:Avenir, Kristopher Regular, Adobe Casion, sans-serif;
+	
+}
+.website-header {
+	display:grid;
+	
+}
+
+.website-footer{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-middle {
+	text-align:center;
+}
+.footer-right {
+	text-align:right;
+}
+
