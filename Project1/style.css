@@ -8,7 +8,6 @@
 
 .website-header {
 	display: grid;
-	align-content: center;
 	text-align: center;
 }
 
@@ -20,6 +19,19 @@
 }
 
 .content-grid {
+	height:80vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+#accent-color {
+	background-color: rgb(186, 171, 116);
+}
+
+.top-left{
+	text-align: right;
+}
+
+.bottom-left{
+	text-align: right;
 }
