@@ -12,16 +12,19 @@
 }
 
 .main-nav a {
-	
-	padding:10px;
-	margin: 0 px 5px;
+	display: block;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
 	text-transform: uppercase;
 }
 
+
 .content-grid {
-	height:80vh;
+	height: 95vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 2px;
 }
 
 #accent-color {
@@ -37,6 +40,19 @@
 }
 
 .website-footer {
+	background-color: rgb(186, 171, 116);
+	display: grid;
 	text-align: center;
-	padding: 10px;
+	grid-template-columns: 1fr 0.2fr 1fr;
+	color: white;
+}
+
+#footer-margin {
+	margin: 20px;
+}
+.footer-left {
+	text-align: right;
+}
+.footer-right {
+	text-align: left;
 }
