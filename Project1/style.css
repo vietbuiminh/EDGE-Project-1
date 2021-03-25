@@ -1,3 +1,7 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
 .container {
 	max-width:1400px;
 	width:100%;
@@ -9,16 +13,25 @@
 .website-header {
 	display: grid;
 	text-align: center;
+
+}
+.logo {
+	text-align: center;
+	padding-top: 50px;
 }
 
 .main-nav a {
-	display: block;
   	text-align: center;
   	padding: 14px 16px;
   	text-decoration: none;
 	text-transform: uppercase;
+	color: black;
+
 }
 
+.main-nav {
+	margin: 20px;
+}
 
 .content-grid {
 	height: 95vh;
@@ -35,6 +48,8 @@ h1 {
 }
 .top-left{
 	text-align: right;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .bottom-left{
