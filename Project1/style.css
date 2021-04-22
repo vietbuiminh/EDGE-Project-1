@@ -3,7 +3,7 @@ html, body {
 	padding: 0px;
 }
 .container {
-	max-width:1400px;
+	max-width:1300px;
 	width:100%;
 	margin: 0 auto;
 
@@ -16,8 +16,10 @@ html, body {
 }
 .logo {
 	text-align: center;
-	padding-top: 50px;
-	
+	padding-top: 20px;
+}
+.logo img {
+	height: 6em;
 }
 
 .main-nav a {
@@ -36,7 +38,6 @@ html, body {
 }
 
 .content-grid {
-	height: 85vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 2px;
@@ -130,7 +131,7 @@ h1:hover {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	object-fit: cover;
+	object-fit: contain;
 	grid-column: 2/4;
 	grid-row: 1/4;
 	width: 100%;
@@ -183,19 +184,23 @@ h1:hover {
 	display: grid;
 	text-align: center;
 	grid-template-columns: 1fr 0.2fr 1fr;
-	color: white;
-	position: absolute;
-	bottom: 0;
-	height: 60px;
-	width: 100%;
+	margin-top: 5px;
+}
+.website-footer img {
+	height: 4em;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 #footer-margin {
-	margin: 20px;
+	margin: 30px;
 }
 .footer-left {
 	text-align: right;
 }
 .footer-right {
 	text-align: left;
+}
+.footer-middle {
+	text-align: center;
 }
