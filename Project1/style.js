@@ -1,19 +1,25 @@
-console.log(document.getElementsByClassName('top-left'));
-if (document.getElementsByClassName('top-left') == null) {
-   document.getElementsByClassName('top-left')[0].onclick = function(){
-      location.href= 'pages/business-traveler.html'
+var menu = document.querySelector(".menu");
+var ham = document.querySelector(".ham");
+var xIcon = document.querySelector(".xIcon");
+var menuIcon = document.querySelector(".menuIcon");
+
+ham.addEventListener("click", toggleMenu);
+menu.classList.contains("showMenu");
+// toggle menu in and out when clicking on the hamburger
+function toggleMenu() {
+   if (menu.classList.contains("showMenu")) {
+     menu.classList.remove("showMenu");
+     xIcon.style.display = "none";
+     menuIcon.style.display = "block";
+   } else {
+     menu.classList.add("showMenu");
+     xIcon.style.display = "block";
+     menuIcon.style.display = "none";
    }
 }
-
-document.getElementsByClassName('top-right')[0].onclick = function(){
-   location.href= 'pages/dinner.html'
- }
-document.getElementsByClassName('bottom-left')[0].onclick = function(){
-   location.href= 'pages/private-dining.html'
- }
-document.getElementsByClassName('bottom-right')[0].onclick = function(){
-   location.href= 'pages/weekends-families.html'
- }
-document.getElementsByClassName('logo')[0].onclick = function(){
-   location.href= 'index.html'
-}
+var menuLinks = document.querySelectorAll(".menuLink");
+menuLinks.forEach( 
+   function(menuLink) { 
+     menuLink.addEventListener("click", toggleMenu);
+   }
+ )

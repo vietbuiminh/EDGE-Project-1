@@ -3,12 +3,16 @@
 		<title>Bass Street Chop House</title>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!--Material Design for Hamburger menu-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	
 	<body>
 		<div class="container">
 			<div class="logo">
-				<img src="./Photos/logo.PNG" alt="Logo of the restaurant"/>
+				<a href="index.html">
+					<img src="./Photos/logo.PNG" alt="Logo of the restaurant"/>
+				</a>
 			</div>
 	
 			<!--<a href="index.html"><img src="Photos/" alt="Logo with the name of the Restaurant" /></a>-->
@@ -21,39 +25,56 @@
 					<a href="pages/contact-us.html">Contact Us</a>
 				</nav>
 				<!--Hamburger menu goes here-->
-				
+				<button class="ham">
+					<!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+					<span class="menuIcon material-icons">
+					  menu
+					</span>
+				</button>
+				<ul class="menu">
+					<li><a class="menuLink" href="#">Home</a></li>
+					<li><a class="menuLink" href="#">Profile</a></li>
+					<li><a class="menuLink" href="#">About</a></li>
+					<li><a class="menuLink" href="#">Contacts</a></li>
+				</ul>
 			</header>
 			<!--The 4 squares in the body part-->
 			<main>
 				<div class="content-grid">
 					<!--top left box-->
-					<section id="accent-color" class="top-left">
-						<div class="img1"></div>
-						<h1>The Business Traveler</h1>
-						<div class="star" id="star-position1"></div>
-					</section>
+					<a href="pages/business-traveler.html" style="text-decoration: none;">
+						<section id="accent-color" class="top-left">
+							<div class="img1"></div>
+							<h1>The Business Traveler</h1>
+							<div class="star" id="star-position1"></div>
+						</section>
+					</a>
 					
 					<!--top right box-->
-					<section class="top-right">
-						<div class="img2"></div>
-						<h1>Dinner</h1>
-						<div class="star" id="star-position2"></div>
-					</section>
+					<a href="pages/dinner.html" style="text-decoration: none;">
+						<section class="top-right">
+							<div class="img2"></div>
+							<h1>Dinner</h1>
+							<div class="star" id="star-position2"></div>
+						</section>
+					</a>
 					<!--bottom left box-->
-					<section class="bottom-left">
-						<div class="img3"></div>
-						<h1>Private Dining<br>Lunch | Dinner</h1>
-						<div class="star" id="star-position3"></div>
-					</section>
-					
+					<a href="pages/private-dining.html" style="text-decoration: none;">
+						<section class="bottom-left">
+							<div class="img3"></div>
+							<h1>Private Dining<br>Lunch | Dinner</h1>
+							<div class="star" id="star-position3"></div>
+						</section>
+					</a>
 					
 					<!--bottom right box-->
-					<section id="accent-color" class="bottom-right" >
-						<div class="img4"></div>
-						<h1>Weekends Families</h1>
-						<div class="star" id="star-position4"></div>
-					</section>
-					
+					<a href="pages/weekends-families.html" style="text-decoration: none;">
+						<section id="accent-color" class="bottom-right" >
+							<div class="img4"></div>
+							<h1>Weekends Families</h1>
+							<div class="star" id="star-position4"></div>
+						</section>
+					</a>
 				</div>
 			</main>
 			
