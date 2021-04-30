@@ -38,7 +38,7 @@ html, body {
 }
 
 .ham {
-	position: fixed;
+	position: absolute;
 	/* keep the hamburger button above everything */
 	z-index: 100;
 	top: 5rem;
@@ -51,15 +51,18 @@ html, body {
 }
   
 .menu {
-	position: fixed;
+	position:absolute;
+	top: 14em;
+	right: 1.5em;
 	width: 100px;
 	height: 300px;
 	border: 1px solid black;
 	background: white;
-	transform: translateX(-100%);
+	transform: translateX(200%);
 	transition: transform 0.2s;
 	list-style: none;
 	font-size: 10px;
+	padding: 0;
 }
   
 .showMenu {
