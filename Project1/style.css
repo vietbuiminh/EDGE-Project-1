@@ -3,9 +3,10 @@ html, body {
 	padding: 0px;
 }
 .container {
+	position: relative;
+  	min-height: 100vh;
 	max-width:1300px;
 	width:100%;
-	
 	margin: 0 auto;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -21,7 +22,35 @@ html, body {
 .logo img {
 	height: 6em;
 }
+.website-footer {
+	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: rgb(186, 171, 116);
+	display: grid;
+	text-align: center;
+	grid-template-columns: 1fr 0.2fr 1fr;
+	margin-top: 5px;
+}
+.website-footer img {
+	height: 4em;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
 
+#footer-margin {
+	margin: 30px;
+}
+.footer-left {
+	text-align: right;
+}
+.footer-right {
+	text-align: left;
+}
+.footer-middle {
+	text-align: center;
+}
 .main-nav a {
   	text-align: center;
   	padding: 14px 16px;
@@ -51,18 +80,17 @@ html, body {
 }
   
 .menu {
-	position:absolute;
+	position:fixed;
 	top: 14em;
-	right: 1.5em;
+	right: 2.5em;
 	width: 100px;
-	height: 300px;
 	border: 1px solid black;
 	background: white;
 	transform: translateX(200%);
 	transition: transform 0.2s;
 	list-style: none;
 	font-size: 10px;
-	padding: 0;
+	padding: 10px;
 }
   
 .showMenu {
@@ -71,9 +99,18 @@ html, body {
   
 .menuLink {
 	display: inline;
+	text-transform: uppercase;
 	font-size: 16px;
 	color: black;
 	text-decoration: none;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu li {
+	padding-bottom: 2em;
 }
   
 .menuLink:hover {
@@ -84,6 +121,7 @@ html, body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 2px;
+	padding-bottom: 5em;
 }
 
 #accent-color {
@@ -94,9 +132,7 @@ h1 {
 	font-family: Palatino, 'Palatino Linotype', serif;
 	font-size: 2em;
 }
-h1:hover {
-	cursor: pointer;
-}
+
 
 /* Set the star in each quad */
 .star {
@@ -121,6 +157,8 @@ h1:hover {
 	grid-row: 1/4;
 	object-fit: cover;
 	width: 100%;
+	margin-bottom: 2em;
+	margin-top: 2em;
 }
 
 #star-position1 {
@@ -152,6 +190,8 @@ h1:hover {
 	grid-row: 1/4;
 	object-fit: cover;
 	width: 100%;
+	margin-bottom: 2em;
+	margin-top: 2em;
 }
 #star-position2 {
 	grid-row: 3;
@@ -180,6 +220,8 @@ h1:hover {
 	grid-column: 2/4;
 	grid-row: 1/4;
 	width: 100%;
+	margin-bottom: 2em;
+	margin-top: 2em;
 }
 #star-position3 {
 	grid-row: 0;
@@ -211,6 +253,8 @@ h1:hover {
 	grid-column: 2/4;
 	grid-row: 1/4;
 	width: 100%;
+	margin-bottom: 2em;
+	margin-top: 2em;
 }
 #star-position4 {
 	grid-row: 0;
@@ -225,28 +269,3 @@ h1:hover {
 }
 
 
-.website-footer {
-	background-color: rgb(186, 171, 116);
-	display: grid;
-	text-align: center;
-	grid-template-columns: 1fr 0.2fr 1fr;
-	margin-top: 5px;
-}
-.website-footer img {
-	height: 4em;
-	padding-top: 6px;
-	padding-bottom: 6px;
-}
-
-#footer-margin {
-	margin: 30px;
-}
-.footer-left {
-	text-align: right;
-}
-.footer-right {
-	text-align: left;
-}
-.footer-middle {
-	text-align: center;
-}
