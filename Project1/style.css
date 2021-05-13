@@ -23,7 +23,7 @@ html, body {
 	height: 6em;
 }
 .website-footer {
-	position: absolute;
+	position: static;
   	bottom: 0;
   	width: 100%;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -131,6 +131,10 @@ h1 {
 	color: black;
 	font-family: Palatino, 'Palatino Linotype', serif;
 	font-size: 2em;
+}
+
+h2 {
+	font-family: Palatino, 'Palatino Linotype', serif;
 }
 
 
@@ -268,4 +272,61 @@ h1 {
 	padding-right: 20px;
 }
 
+.✌ {
+	display: grid;
+	grid-template-columns: 1fr 0.2fr 1fr 2fr;
+	grid-template-rows: 1fr 0.5fr 0.5fr 0.6fr;
+}
 
+.🅰 {
+	background: url(./Photos/Bass_St_15.JPG); 
+	background-size: cover;
+	background-position: center;
+	grid-column: 1/4;
+	grid-row: 1;
+}
+
+.🅱 {
+	background: url(./Photos/American\ Lamb\ am\ Lamb\ Porterhouse\ -\ Two\ 7\ oz.\ lamb\ chops\ w\ herb\ goat\ cheese.png); 
+	background-size: cover;
+	background-position: center;
+	height: auto;
+	grid-column: 1/3;
+	grid-row: 2/4;
+}
+
+.🆎 {
+	background: url(./Photos/Bass_St_06.JPG); 
+	background-size: cover;
+	background-position: center;
+	grid-column: 2/4;
+	height: auto;
+	grid-row: 3/5;
+}
+
+.👀 {
+	grid-column: 4/5;
+	grid-row: 1/5;
+	margin: 2em;
+}
+
+.🟨 {
+	color:rgb(186, 171, 116);
+}
+
+.🔲 {
+	border: 1px solid;
+	padding: 0 1em 0 1em;
+}
+.🔲 h2 {
+	margin: 0;
+	margin-top: 0.5em;
+}
+
+.⏹ {
+	display:inline-block;
+	border: 1px solid;
+	font-weight:700;
+	font-size: 1.1rem;
+	padding: 3px 15px 3px 15px;
+}
