@@ -140,7 +140,7 @@ h2 {
 
 /* Set the star in each quad */
 .star {
-	background: url(Photos/star.PNG);
+	background: url(Photos/star.png);
 	background-repeat: no-repeat;
 	background-size: 4em;
 }
