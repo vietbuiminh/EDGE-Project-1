@@ -181,7 +181,7 @@ h2 {
 
 /* Section 2 Top Right Box */
 .top-right{
-	text-align: left;
+	text-align: right;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
