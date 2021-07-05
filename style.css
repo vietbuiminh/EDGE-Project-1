@@ -148,7 +148,7 @@ h2 {
 /* Section 1 top left box */
 .top-left{
 	background-color: rgb(186, 171, 116);
-	text-align: left;
+	text-align: right;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -181,7 +181,7 @@ h2 {
 
 /* Section 2 Top Right Box */
 .top-right{
-	text-align: right;
+	text-align: left;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
